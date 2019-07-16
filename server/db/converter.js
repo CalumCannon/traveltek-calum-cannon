@@ -5,4 +5,8 @@ var result = convert.xml2json(xml,{compact: false, spaces: 4});
 
 console.log(result);
 
-//export default result; ????
+use flights_db;
+db.dropDatabase();
+
+//insert many? or insert one? reformat json?
+db.flights.insert(xml)
